@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: green;
+  color: white;
+  text-align: center;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.game-area {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.dealer-hand, .player-hand {
+  width: 45%;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#message {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+}
