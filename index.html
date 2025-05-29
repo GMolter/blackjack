@@ -39,8 +39,9 @@
         .header {
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: flex-start;
             margin-bottom: 1rem;
+            width: 100%;
         }
 
         .title {
@@ -48,12 +49,14 @@
             font-weight: bold;
             color: #ffd700;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            text-align: left;
         }
 
         .chips-display {
             font-size: 1.5rem;
             color: #ffd700;
             font-weight: bold;
+            text-align: right;
         }
 
         .game-area {
@@ -324,9 +327,7 @@
             }
             
             .header {
-                flex-direction: column;
-                gap: 0.5rem;
-                text-align: center;
+                align-items: center;
             }
         }
     </style>
