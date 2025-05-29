@@ -19,7 +19,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            overflow-x: hidden;
+            overflow: hidden;
         }
 
         .game-container {
@@ -552,6 +552,9 @@
             saveChips();
             updateChipDisplay();
             
+            // Hide betting section immediately after placing bet
+            hideBettingSection();
+            
             // Reset game state
             playerHand = [];
             dealerHand = [];
@@ -595,7 +598,6 @@
                 checkForBlackjack();
                 updateGameState();
                 showGameActions();
-                hideBettingSection();
             }, 1500);
         }
 
