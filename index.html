@@ -27,22 +27,27 @@
             max-width: 1200px;
             background: rgba(0, 0, 0, 0.3);
             border-radius: 20px;
-            padding: 2rem;
+            padding: 1.5rem;
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.1);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
         }
 
         .header {
-            text-align: center;
-            margin-bottom: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
         }
 
         .title {
-            font-size: 3rem;
+            font-size: 2.5rem;
             font-weight: bold;
             color: #ffd700;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-            margin-bottom: 0.5rem;
         }
 
         .chips-display {
@@ -54,8 +59,8 @@
         .game-area {
             display: flex;
             flex-direction: column;
-            gap: 3rem;
-            margin-bottom: 2rem;
+            gap: 1.5rem;
+            margin-bottom: 1rem;
         }
 
         .dealer-section, .player-section {
@@ -74,7 +79,7 @@
         .cards-container {
             display: flex;
             gap: 10px;
-            min-height: 140px;
+            min-height: 100px;
             align-items: center;
             justify-content: center;
             flex-wrap: wrap;
@@ -139,8 +144,8 @@
 
         .betting-section {
             text-align: center;
-            margin-bottom: 2rem;
-            padding: 1.5rem;
+            margin-bottom: 1rem;
+            padding: 1rem;
             background: rgba(0, 0, 0, 0.2);
             border-radius: 15px;
         }
@@ -293,7 +298,7 @@
 
         @media (max-width: 768px) {
             .title {
-                font-size: 2rem;
+                font-size: 1.8rem;
             }
             
             .chips-display {
@@ -316,6 +321,12 @@
             
             .card-top, .card-bottom {
                 font-size: 10px;
+            }
+            
+            .header {
+                flex-direction: column;
+                gap: 0.5rem;
+                text-align: center;
             }
         }
     </style>
